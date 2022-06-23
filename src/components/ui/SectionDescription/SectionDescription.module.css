@@ -1,0 +1,16 @@
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    .description {
+        font-size: 18px;
+    }
+
+    .medium {
+        font-size: 20px;
+    }
+}

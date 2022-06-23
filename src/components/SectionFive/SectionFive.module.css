@@ -1,0 +1,43 @@
+.root {
+    --item-width: 415px;
+
+    padding-top: 120px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.inner {
+    text-align: center;
+}
+
+.list {
+    text-align: left;
+}
+
+.title {
+    max-width: 900px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .root {
+        padding-top: 240px;
+    }
+
+    .box {
+        height: 600vh;
+        min-height: 2112px;
+        display: flex;
+    }
+
+    .list {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        width: var(--item-width);
+    }
+}

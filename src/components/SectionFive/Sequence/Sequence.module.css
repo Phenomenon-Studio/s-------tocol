@@ -1,0 +1,33 @@
+.sequence {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.sequenceInner {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.sequenceInner canvas {
+    max-height: min(350px, 40vh);
+}
+
+@media (min-width: 768px) {
+    .sequence {
+        align-items: flex-start;
+        width: calc(100% - var(--item-width));
+    }
+
+    .sequenceInner {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .sequenceInner canvas {
+        max-height: 520px;
+    }
+}

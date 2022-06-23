@@ -1,0 +1,89 @@
+@import "./reset.css";
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+:root {
+    /* Fonts */
+    --font-primary: "DM Sans", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+
+    /* Colors */
+    --color-primary: #ffffff;
+    --color-secondary: #0a0027;
+    --color-third: hsl(245deg, 100%, 66%);
+    --color-third-hover: hsl(245deg, 100%, 76%);
+    --color-third-active: hsl(245deg, 100%, 56%);
+    --color-grayscale-100: #e7e6e9;
+    --color-grayscale-200: #ceccd4;
+    --color-grayscale-300: #b6b3be;
+    --color-grayscale-400: #9d99a8;
+    --color-grayscale-500: #858093;
+    --color-grayscale-600: #6c667d;
+    --color-grayscale-700: #544d68;
+    --color-grayscale-800: #3b3352;
+    --color-grayscale-900: #231a3c;
+    --color-info: #ff4d35;
+
+    /* Sizes */
+    --container-width: 1390px;
+    --container-half-padding: 24px;
+
+    /* Animations */
+    --animation-blink: blink;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+main {
+    overflow: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.lock-scroll-y {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.will-change {
+    will-change: transform, opacity;
+}
+
+.relative {
+    position: relative;
+}

@@ -1,0 +1,56 @@
+.root {
+    padding: 20px;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+.imageWrap {
+    width: 48px;
+    height: 48px;
+}
+
+.content {
+    margin-top: 32px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+}
+
+.description {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.7;
+}
+
+.date {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .imageWrap {
+        width: 64px;
+        height: 64px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .root {
+        padding: 32px;
+    }
+}
